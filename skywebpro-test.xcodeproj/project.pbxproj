@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		A9179F3F269B73880079D33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F3E269B73880079D33A /* AppDelegate.swift */; };
 		A9179F41269B73880079D33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F40269B73880079D33A /* SceneDelegate.swift */; };
-		A9179F43269B73880079D33A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F42269B73880079D33A /* ViewController.swift */; };
+		A9179F43269B73880079D33A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F42269B73880079D33A /* CategoriesViewController.swift */; };
 		A9179F46269B73880079D33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9179F44269B73880079D33A /* Main.storyboard */; };
 		A9179F48269B73890079D33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9179F47269B73890079D33A /* Assets.xcassets */; };
 		A9179F4B269B73890079D33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9179F49269B73890079D33A /* LaunchScreen.storyboard */; };
+		A9179F53269B75BD0079D33A /* NetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F52269B75BD0079D33A /* NetWorker.swift */; };
+		A9179F55269B75D90079D33A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F54269B75D90079D33A /* Models.swift */; };
+		A9179F57269B86170079D33A /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F56269B86170079D33A /* ProductsListViewController.swift */; };
+		A9179F59269B9C480079D33A /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9179F58269B9C480079D33A /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9179F3B269B73880079D33A /* skywebpro-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skywebpro-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9179F3E269B73880079D33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9179F40269B73880079D33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9179F42269B73880079D33A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9179F42269B73880079D33A /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		A9179F45269B73880079D33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9179F47269B73890079D33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9179F4A269B73890079D33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9179F4C269B73890079D33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9179F52269B75BD0079D33A /* NetWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorker.swift; sourceTree = "<group>"; };
+		A9179F54269B75D90079D33A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A9179F56269B86170079D33A /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		A9179F58269B9C480079D33A /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				A9179F3E269B73880079D33A /* AppDelegate.swift */,
 				A9179F40269B73880079D33A /* SceneDelegate.swift */,
-				A9179F42269B73880079D33A /* ViewController.swift */,
+				A9179F42269B73880079D33A /* CategoriesViewController.swift */,
 				A9179F44269B73880079D33A /* Main.storyboard */,
 				A9179F47269B73890079D33A /* Assets.xcassets */,
 				A9179F49269B73890079D33A /* LaunchScreen.storyboard */,
 				A9179F4C269B73890079D33A /* Info.plist */,
+				A9179F52269B75BD0079D33A /* NetWorker.swift */,
+				A9179F54269B75D90079D33A /* Models.swift */,
+				A9179F56269B86170079D33A /* ProductsListViewController.swift */,
+				A9179F58269B9C480079D33A /* ProductDetailViewController.swift */,
 			);
 			path = "skywebpro-test";
 			sourceTree = "<group>";
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9179F43269B73880079D33A /* ViewController.swift in Sources */,
+				A9179F43269B73880079D33A /* CategoriesViewController.swift in Sources */,
+				A9179F57269B86170079D33A /* ProductsListViewController.swift in Sources */,
+				A9179F59269B9C480079D33A /* ProductDetailViewController.swift in Sources */,
 				A9179F3F269B73880079D33A /* AppDelegate.swift in Sources */,
 				A9179F41269B73880079D33A /* SceneDelegate.swift in Sources */,
+				A9179F53269B75BD0079D33A /* NetWorker.swift in Sources */,
+				A9179F55269B75D90079D33A /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
